@@ -12,7 +12,6 @@ $conn = new mysqli($servername, $username, $password, $database);
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
-echo "Connected successfully";
 ?>
 <html>
 
@@ -23,9 +22,7 @@ echo "Connected successfully";
 <body>
 
   <div class="topnav">
-    <a class="active" href="#home">Home</a>
-    <a href="#news">News</a>
-    <a href="#contact">Contact</a>
+    <a class="active" href="">Home</a>
     <a href="admin.php">Admin</a>
   </div>
   <div class="myDiv">
