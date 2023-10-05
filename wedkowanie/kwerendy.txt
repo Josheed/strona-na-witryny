@@ -1,0 +1,9 @@
+1:SELECT `id`,`nazwa`,`wystepowanie` FROM `ryby`
+2:SELECT `Ryby_id`,`wymiar_ochronny` FROM `okres_ochronny` WHERE `wymiar_ochronny` < 30
+3:
+SELECT Ryby.nazwa, Lowisko.akwen, Lowisko.wojewodztwo
+FROM Ryby
+JOIN Lowisko ON Ryby.id = Lowisko.id
+WHERE Lowisko.rodzaj = 3;
+
+4:alter table Ryby ADD COLUMN dobowy_limit TINYINT; 
